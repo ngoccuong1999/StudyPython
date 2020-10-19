@@ -13,11 +13,14 @@ try:
     hoursFloat = float(hours)
 except:
     print("Input wrong hours")
+    quit()
 try:
     ratePerHoursFloat = float(ratePerHours)
 except:
     print("Input wrong rate per hours")
+    quit()
 if hoursFloat <= 40:
     pay = hoursFloat * ratePerHoursFloat
 else:
     pay = hoursFloat * ratePerHoursFloat * 1.5
+    
