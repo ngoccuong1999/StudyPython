@@ -6,8 +6,8 @@
 # # Do not worry about error checking the user input
 # # - assume the user types numbers properly.
 
-hours = input("Input hours")
-ratePerHours = input("Input rate per hours")
+hours = input("Input hours:")
+ratePerHours = input("Input rate per hours: ")
 
 try:
     hoursFloat = float(hours)
@@ -23,4 +23,4 @@ if hoursFloat <= 40:
     pay = hoursFloat * ratePerHoursFloat
 else:
     pay = hoursFloat * ratePerHoursFloat * 1.5
-    
+print(pay)
