@@ -4,7 +4,7 @@
 # plaintext = [1 2 0 1]
 #key = [0 1] == > s và t ban đầu như bên dưới
 s = [0, 1, 2, 3, 4, 5, 6, 7]
-t = [0, 1, 0, 1, 0, 1, 0, 1]
+t = [0, 4, 0, 1, 0, 4, 0, 1]
 
 #b1: Hoán đổi S initial permutation bang cong thức như dưới
 j = 0;
@@ -17,7 +17,7 @@ print("Initial permuatation S = ", s, end = "\n\n") # s sau khi hoán đổi
 #b2: Sinh giá trị gamma chính là k với mỗi k sẽ xor với plaintext tương ứng để sinh ra ciphertext
 #while(true) nghĩa là sẽ sinh k cho đến khi nào đủ hêt cho plaintext
 # bước này là stream generation hay pseudo-random generation algorithm (PRGA). The PRGA is below hay key stream
-p = [1, 2, 0, 1]
+p = [0, 4, 0, 1]
 i, j, count = 0, 0, 0
 while count < 4 :
     i = (i + 1) % 8
