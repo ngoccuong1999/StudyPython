@@ -1,0 +1,5 @@
+D:\AnToanThongTin\Python\StudyPython\ExercisePython\obj\Debug\net5.0\ExercisePython.csprojAssemblyReference.cache
+D:\AnToanThongTin\Python\StudyPython\ExercisePython\obj\Debug\net5.0\ExercisePython.GeneratedMSBuildEditorConfig.editorconfig
+D:\AnToanThongTin\Python\StudyPython\ExercisePython\obj\Debug\net5.0\ExercisePython.AssemblyInfoInputs.cache
+D:\AnToanThongTin\Python\StudyPython\ExercisePython\obj\Debug\net5.0\ExercisePython.AssemblyInfo.cs
+D:\AnToanThongTin\Python\StudyPython\ExercisePython\obj\Debug\net5.0\ExercisePython.csproj.CoreCompileInputs.cache

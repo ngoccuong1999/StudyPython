@@ -1,0 +1,39 @@
+#De  khong noi ro la cho san list interger hay la minh nhap vao nen
+#em nhap vao do dai va nhap vao list
+#listInteger = [64, 25, 12, 22, 11]
+listInteger = []
+testInput = 1
+while testInput != 0 :
+    try:
+        length = int(input("Nhap do dai cua list: "))
+        while length < 0:
+            print("Nhap sai!!! Vui long nhap vao mot so tu nhien > 0")
+            length = int(input("Nhap do dai cua list: "))
+        testInput = 0
+    except:
+        print("Nhap sai!!! Vui long nhap vao mot so tu nhien > 0")
+testInput = 1
+
+while testInput != 0 :
+    try:
+        print("Nhap phan tu cua mang")
+        for i in range(length):
+            listInteger.append(int(input('')))
+
+        testInput = 0
+    except:
+        print("Nhap sai!!! Vui long nhap vao mot so tu nhien ")
+        listInteger = []
+
+pos1 = int(input("pos1 = "))
+while pos1 > length:
+    print("pos1 phai nho hon length cua list. Vui long nhap lai")
+    pos1 = int(input("pos1 = "))
+pos2 = int(input("pos2 = "))
+while pos2 > length:
+    print("pos2 phai nho hon length cua list. Vui long nhap lai")
+    pos2 = int(input("pos2 = "))
+
+print("Input: List = ", listInteger, "pos1 = ", pos1 , ", pos2 = ", pos2)
+listInteger[pos1 - 1] , listInteger[pos2 - 1] = listInteger[pos2 - 1], listInteger[pos1 - 1]
+print("Output: ", listInteger)
