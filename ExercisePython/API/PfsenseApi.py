@@ -36,7 +36,7 @@ with open('ip_phishing.csv') as csv_file:
                 if columeName == 'ip':
                     break
                 ipPosition += 1
-            print("Ip position: ", ipPosition)
+            # print("Ip position: ", ipPosition)
             line_count += 1
         else:
             ip = row[ipPosition]
@@ -64,6 +64,13 @@ with open('ip_phishing.csv') as csv_file:
                 response = requests.post(url, verify=False, json=payload)
                 # print(response.content)
             line_count += 1
+
+# Auto apply change firewall rule
+urlApply = 'https://127.0.0.1:8443/api/v1/firewall/apply'
+payload = {
+
+}
+response = requests.post(urlApply, verify=False, json=payload)
 
 
 # reference
